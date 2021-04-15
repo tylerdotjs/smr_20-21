@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chadsite</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/navigation.js"></script>
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body style="margin: 0px; background-color: #353839;">
+    <nav>
+        <img src="./images/Flag_of_Chad.svg" alt="Flag of Chad" height="40px">
+        <ul id="nav">
+            <li>
+                <a class="nav_el" href="#geography">Geography</a>
+            </li>
+            <li>
+                <a class="nav_el" href="#climate">Climate</a>
+            </li>
+            <li>
+                <a class="nav_el" href="#population">Population</a>
+            </li>
+            <li>
+                <a class="nav_el" href="#religion">Religion</a>
+            </li>
+            <li>
+                <a class="nav_el" href="#food">Food</a>
+            </li>
+            <li>
+                <a class="nav_el" href="#health">Health</a>
+            </li>
+            <li>
+                <a class="nav_el" href="#crime">Crime / Substance Disorders</a>
+            </li>
+            <li>
+                <a class="nav_el" href="#sources">Sources</a>
+            </li>
+            <li>
+                <div class="indicator"></div>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section id="geography">
+            <ul>
+                <li>Area(sq km): 1,284,000</li>
+                <li>Area(sq mi): 496,000</li>
+            </ul>
+            <img src="./images/Chad_sat.jpg" alt="Chat Satlite" height="98%">
+            <img src="./images/Chad_Topography.png" alt="Chad Topography" height="98%">
+        </section>
+        <section id="climate">
+            <a href="https://climateknowledgeportal.worldbank.org/country/chad/climate-data-historical">
+                <img src="./images/average-monthly-temperat.svg" alt="Rain/Temp">
+            </a>
+        </section>
+        <section id="population">
+            <iframe src="https://data.worldbank.org/share/widget?indicators=SP.POP.TOTL&locations=TD" height='65%'
+                frameBorder='0' scrolling="no"></iframe>
+            <iframe src="https://data.worldbank.org/share/widget?indicators=SP.DYN.LE00.IN&locations=TD" height='65%'
+                frameBorder='0' scrolling="no"></iframe>
+            <img src="./images/chad_popdensity.png" alt="" id="img_populationDencity">
+            <script>
+                $(function () {
+                    $(window).on('click', function (e) {
+                        if ($(e.target).is("#img_populationDencity")) {
+                            $('#img_populationDencity').addClass('imgLarge')
+                        } else {
+                            $('#img_populationDencity').removeClass('imgLarge')
+                        }
+                    })
+                })
+            </script>
+        </section>
+        <section id="religion">
+            <img src="./images/religionPie.svg" alt="" width="1300" height="800">
+        </section>
+        <section id="food">
+            <p style="width: 500px;">
+                Chadian food consists of multiple grains, vegetables, fruits, and meats. Millet and sorghum are some
+                common grains used by Chadians. A Chadian's diet is mostly cereals. The Consumption of animal products
+                and fruit and vegetables, foods rich in micronutrients, is low. The food supply in Chad is barely able
+                to meet the needs of the Chadians. It is not uncommon for households to have food insecurity.
+            </p>
+            <a title="Dezidor, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons"
+                href="https://commons.wikimedia.org/wiki/File:J%C3%A1hlov%C3%A1_ka%C5%A1e.jpg"><img width="512"
+                    alt="Jáhlová kaše"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/J%C3%A1hlov%C3%A1_ka%C5%A1e.jpg/512px-J%C3%A1hlov%C3%A1_ka%C5%A1e.jpg"></a>
+        </section>
+        <section id="sports">
+            <a title="Original author: Pierre de Coubertin (1863-1937), Public domain, via Wikimedia Commons"
+                href="https://commons.wikimedia.org/wiki/File:Olympic_rings_without_rims.svg"><img width="500px"
+                    alt="Olympic rings without rims"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/256px-Olympic_rings_without_rims.svg.png"></a>
+            <p>
+                Chadian's enjoy playing baseball. Judo is also popular in Chad. Chad has participated in the Olympic
+                Games but never won.
+            </p>
+        </section>
+        <section id="health">
+            <p>"Chad is facing challenges of environmental degradation, climate change and population growth, whilst
+                already characterised by low development and high poverty. The Health Cluster is tackling issues such as
+                malnutrition, outbreaks, a high maternal mortality rate, sexual and reproductive health and HIV. The
+                Cluster targets the most vulnerable, including children under five, pregnant and lactating women, and
+                people with disabilities. They are also targeting nomadic people and refugees, who are often unable to
+                access static health services." - <a href="https://www.who.int/health-cluster/countries/chad/en/"
+                    style="color:#C9CDCF;">World Health Organization</a></p>
+            <img src="./images/contracitive.svg" alt="">
+            <p>
+                Before August first, 2017 abortion was banned. President Idriss Deby passed a law making abortion legal
+                in cases of sexual assault, rape, incest, or when the pregnancy endangers the mental or physical health
+                or the life of the mother or the fetus.
+            </p>
+        </section>
+        <section id="crime">
+            <p>On the 26th of January 2021, the U.S. Department of State Overseas Security Advisory Council(OSAC) has
+                put in a travel advisory, “Reconsider travel to Chad due to COVID-19, crime, terrorism, and minefields.” Road laws in Chad are not enforced.
+            </p>
+            <img src="./images/substance.svg" alt="">
+        </section>
+        <section id="sources">
+            <h1>Works Cited</h1>
+            <p>
+                    Nutrition Country Profiles: Chad Summary, www.fao.org/ag/agn/nutrition/tcd_en.stm. <br>
+                    “Abortion in Chad.” Wikipedia, Wikimedia Foundation, 30 Dec. 2020, en.wikipedia.org/wiki/Abortion_in_Chad. <br>
+                    “Chad.” Encyclopædia Britannica, Encyclopædia Britannica, Inc., www.britannica.com/place/Chad. <br>
+                    “Chad.” Wikipedia, Wikimedia Foundation, 25 Jan. 2021, en.wikipedia.org/wiki/Chad. <br>
+                    “Chad.” World Health Organization, World Health Organization, 22 Oct. 2020, www.who.int/health-cluster/countries/chad/en/. <br>
+                    “Chad Africa.” Africa, www.osac.gov/Country/Chad/Detail. <br>
+                    Ebragim, et al. “Fast Shipment.” International Driver License Translation Services Online, Http://Www.nyszone.com, 12 May 2012, www.adcidl.com/Driving-in-Chad.html#:~:text=The main road traffic rules:&text=The maximum speed limit is,while driving are not permitted. <br>
+                    “Home.” World Health Organization, World Health Organization, who.int/. <br>
+                    Rattan, Jesse, et al. “Rapid Contraceptive Uptake and Changing Method Mix With High Use of Long-Acting Reversible Contraceptives in Crisis-Affected Populations in Chad and the Democratic Republic of the Congo.” Global Health, Science and Practice, Global Health: Science and Practice, 18 Aug. 2016, www.ncbi.nlm.nih.gov/pmc/articles/PMC4990162/#:~:text=In Chad, during this period,small number chose tubal ligation. <br>
+            </p>
+        </section>
+    </div>
+    <style>
+        html body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+        .content>* {
+            display: flex;
+            color: #C9CDCF;
+            margin-bottom: 200px;
+            box-sizing: border-box;
+            width: 100vw;
+            padding: 0px 50px;
+            font-size: x-large;
+            justify-content: space-around;
+        }
+
+        .content h1 {
+            margin: 30px 50px;
+        }
+
+        #geography {
+            height: 100vh;
+        }
+
+        #population>iframe {
+            width: calc(50vh * 1.5);
+            height: 50vh;
+        }
+
+        #population>img {
+            height: 50vh;
+            cursor: pointer;
+        }
+
+        #religion {
+            justify-content: center;
+        }
+
+        #sports p {
+            width: 50%;
+        }
+
+        #health p {
+            width: 25%;
+        }
+        #sources {
+            flex-flow: column;
+            align-items: center;
+        }
+
+        .imgLarge {
+            position: fixed;
+            height: 100vh !important;
+            top: 0;
+        }
+    </style>
+</body>
+
+</html>
