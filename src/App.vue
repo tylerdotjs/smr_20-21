@@ -2,6 +2,7 @@
   <div id="app">
       <Nav id="nav"/>
       <div id="content">
+        <Home id="home"/>
         <SocialStudies id="socialStudies" />
         <Electives id="electives"/>
         <ServiceLearning id="serviceLearning" />
@@ -12,6 +13,7 @@
 
 <script>
 import Nav from './components/Navigation/Nav'
+import Home from './components/Home'
 import Math from './components/Subjects/Math'
 import Electives from './components/Subjects/Electives'
 import SocialStudies from './components/Subjects/SocialStudies'
@@ -21,6 +23,7 @@ export default {
   name: 'App',
   components: {
     Nav,
+    Home,
     Math,
     Electives,
     SocialStudies,
