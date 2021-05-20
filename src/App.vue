@@ -3,10 +3,12 @@
       <Nav id="nav"/>
       <div id="content">
         <Home id="home"/>
-        <SocialStudies id="socialStudies" />
-        <Electives id="electives"/>
-        <ServiceLearning id="serviceLearning" />
+        <smart id="smart" />
         <Math id="math"/>
+        <ELA id="ela" />
+        <Science id="science" />
+        <SocialStudies id="socialStudies" />
+        <other id="other" />
       </div>
   </div>
 </template>
@@ -14,20 +16,24 @@
 <script>
 import Nav from './components/Navigation/Nav'
 import Home from './components/Home'
+import smart from './components/Subjects/smart'
 import Math from './components/Subjects/Math'
-import Electives from './components/Subjects/Electives'
+import ELA from './components/Subjects/Ela'
+import Science from './components/Subjects/Science'
 import SocialStudies from './components/Subjects/SocialStudies'
-import ServiceLearning from './components/Subjects/ServiceLearning'
+import other from './components/Subjects/other'
 
 export default {
   name: 'App',
   components: {
     Nav,
     Home,
+    smart,
     Math,
-    Electives,
+    ELA,
+    Science,
     SocialStudies,
-    ServiceLearning
+    other
   }
 }
 </script>

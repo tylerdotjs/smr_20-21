@@ -17,17 +17,17 @@ export default {
     methods: {
         move(){
             var el = document.querySelector(this.$props.location)
-            var boundingBox = el.getBoundingClientRect()
             window.scroll({
-                top: boundingBox.y + 10,
+                top: el.offsetTop - 60,
                 left: 0,
                 behavior: "smooth"
             })
+            console.log(el.offsetTop)
         },
         checkActive(){
             var el = document.querySelector(this.$props.location)
             var boundingBox = el.getBoundingClientRect()
-            var active = boundingBox.y <= 60 && boundingBox.bottom > 50
+            var active = boundingBox.y <= 61 && boundingBox.bottom > 50
             if (active) {
                 this.$el.classList.add("nav_element_active")
             } else {
